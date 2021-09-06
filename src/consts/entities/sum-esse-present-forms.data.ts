@@ -3,19 +3,19 @@ import { Number } from "./number.data";
 import { Person } from "./person.data";
 import { Voice } from "./voice.data";
 
-export const PRESENT: VerbEndings = {
+export const SUM_ESSE_FUI_FUTURUS_FORMS: VerbEndings = {
     [Voice.active]: {
         [Person.first]: {
-            [Number.singular]: 'o',
-            [Number.plural]: 'mus'
+            [Number.singular]: 'sum',
+            [Number.plural]: 'sumus'
         },
         [Person.second]: {
-            [Number.singular]: 's',
-            [Number.plural]: 'tis'
+            [Number.singular]: 'es',
+            [Number.plural]: 'estis'
         },
         [Person.third]: {
-            [Number.singular]: 't',
-            [Number.plural]: 'nt'
+            [Number.singular]: 'est',
+            [Number.plural]: 'sunt'
         }
     }
 }

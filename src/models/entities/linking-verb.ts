@@ -1,10 +1,11 @@
 import { UseCase } from "../../consts/entities/use-case-name";
-import { Verb } from "./verb";
+import { Verb, VerbI } from "./verb";
+
 
 export class LinkingVerb extends Verb {
     takesCase!: UseCase.predicate;
 
-    constructor(definitions: string[], stem: string) {
-        super(definitions, stem);
+    constructor(config: VerbI) {
+        super(config);
     }
 }

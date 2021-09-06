@@ -3,7 +3,7 @@ import { Number } from "./number.data";
 import { Person } from "./person.data";
 import { Voice } from "./voice.data";
 
-export const PRESENT: VerbEndings = {
+export const PRESENT_ENDINGS: VerbEndings = new VerbEndings({
     [Voice.active]: {
         [Person.first]: {
             [Number.singular]: 'o',
@@ -18,4 +18,4 @@ export const PRESENT: VerbEndings = {
             [Number.plural]: 'nt'
         }
     }
-}
+})
